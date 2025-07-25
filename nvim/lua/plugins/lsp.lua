@@ -5,22 +5,27 @@ return {
       local lspconfig = require("lspconfig")
       lspconfig.lua_ls.setup({})
       lspconfig.pyright.setup({})
-    end,
+      end,
   },
   {
-    "williamboman/mason.nvim",
-    config = function()
-      require("mason").setup()
-    end,
+    "mason-org/mason.nvim",
+    opts = {}
   },
-  { "williamboman/mason-lspconfig.nvim", opts = {} },
   {
-    "nvim-treesitter/nvim-treesitter",
-    build = ":TSUpdate",
-    opts = {
-      ensure_installed = { "lua", "python", "bash", "go" },
-      highlight = { enable = true },
-      indent = { enable = true },
+    "mason-org/mason-lspconfig.nvim",
+    opts = {},
+    dependencies = {
+        { "mason-org/mason.nvim", opts = {} },
+        "neovim/nvim-lspconfig",
     },
   },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    config = function()
+      require"lazy".setup({
+  	{"nvim-treesitter/nvim-treesitter", branch = 'master', lazy = false, build = ":TSUpdate"}
+	})
+      end,
+    },
 }
+

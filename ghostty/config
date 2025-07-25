@@ -31,6 +31,8 @@ confirm-close-surface = false
 window-padding-x = 5
 window-padding-y = 5
 window-decoration = auto
+gtk-tabs-location = hidden
+window-subtitle = false
 
 # behavior
 auto-update = check

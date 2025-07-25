@@ -1,19 +1,9 @@
 return {
-  -- 💅 UI Enhancements
+  -- UI Enhancements
   { "stevearc/dressing.nvim", event = "VeryLazy" },
 
-  -- 🎨 Icons
+  -- Icons
   { "nvim-tree/nvim-web-devicons", lazy = true },
-
-  -- 🌈 Rose Pine colorscheme
-  {
-    "rose-pine/neovim",
-    name = "rose-pine",
-    priority = 1000,
-    config = function()
-      vim.cmd.colorscheme("rose-pine")
-    end,
-  },
 
   -- 📊 Statusline
   {
@@ -30,7 +20,7 @@ return {
     end,
   },
 
-  -- 🔍 Telescope fuzzy finder
+  -- Telescope fuzzy finder
   {
     "nvim-telescope/telescope.nvim",
     tag = "0.1.8",
@@ -49,7 +39,7 @@ return {
     end,
   },
 
-  -- 🗂️ File browser extension for Telescope
+  -- File browser extension for Telescope
   {
     "nvim-telescope/telescope-file-browser.nvim",
     dependencies = {

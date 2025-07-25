@@ -1,59 +1,59 @@
 return {
-    yellow = 0xffdcaf6c,
-    green = 0xff98a8a9,
-    red = 0xffc6755b,
-    blue = 0xffa2aab9,
-    darkblue = 0xff6275a1,
-    purple = 0xff6a6378,
-    monotone = 0xff98a8a9,
-    orange = 0xffd09367,
-    quicksilver = 0xffb2b2b2,
-    pink = 0xff725955,
-    magenta = 0xff595066,
+    yellow = 0xfff6c177,         -- Gold
+    green = 0xff9ccfd8,          -- Foam
+    red = 0xffeb6f92,            -- Love
+    blue = 0xff31748f,           -- Pine
+    darkblue = 0xff403d52,       -- Highlight Med
+    purple = 0xffc4a7e7,         -- Iris
+    monotone = 0xff6e6a86,       -- Muted
+    orange = 0xffebbcba,         -- Rose
+    quicksilver = 0xff908caa,    -- Subtle
+    pink = 0xffeb6f92,           -- Love (used again)
+    magenta = 0xffc4a7e7,        -- Iris
 
-    primary = 0xffb2b2b2,
-    secondary = 0xff232323,
+    primary = 0xffe0def4,        -- Text
+    secondary = 0xff191724,      -- Base
 
     black = 0xff000000,
-    white = 0xffb4b4b4,
-    grey = 0xff5a5959,
+    white = 0xffe0def4,          -- Text
+    grey = 0xff6e6a86,           -- Muted
 
     transparent = 0x00000000,
     semi_transparent = 0x40ffffff,
     border_transparent = 0x33ffffff,
 
     icon = {
-        grey = 0xffcdcdcd,
-        primary = 0xff5d5d5d,
-        secondary = 0xff191919,
+        grey = 0xff908caa,       -- Subtle
+        primary = 0xff6e6a86,    -- Muted
+        secondary = 0xff26233a,  -- Overlay
     },
     bar = {
-        bg = 0xff232323,
-        bg2 = 0xff1c1c1c,
-        bg_transparent = 0x99000000,
-        accent = 0xff000000,
-        active = 0xff9eaeb3,
-        selected = 0xff593c3c,
-        transparent = 0xe51e1e1e,
-        border = 0xff393939,
-        secondary = 0xff414141,
-        white_transparent = 0x0dffffff,
-        inactive = 0xff2d2e2f,
-        icons = 0xff61817f,
-        foreground = 0xff857261,
-        foreground_hover = 0xff828282,
+        bg = 0xff1f1d2e,                 -- Surface
+        bg2 = 0xff21202e,                -- Highlight Low
+        bg_transparent = 0x991f1d2e,     -- Surface w/ transparency
+        accent = 0xff524f67,             -- Highlight High
+        active = 0xff9ccfd8,             -- Foam
+        selected = 0xffeb6f92,           -- Love
+        transparent = 0xe5191724,        -- Base w/ transparency
+        border = 0xff524f67,             -- Highlight High
+        secondary = 0xff403d52,          -- Highlight Med
+        white_transparent = 0x0de0def4,  -- Text w/ transparency
+        inactive = 0xff26233a,           -- Overlay
+        icons = 0xff31748f,              -- Pine
+        foreground = 0xff908caa,         -- Subtle
+        foreground_hover = 0xffe0def4,   -- Text
     },
     media = {
-        primary = 0xcc212121,
-        secondary = 0xffffffff,
+        primary = 0xcc1f1d2e,            -- Surface
+        secondary = 0xffe0def4,          -- Text
     },
     popup = {
-        text = 0xffcccccc,
-        bg = 0x991c1c1c,
-        bg_alt = 0xff5d5d5d,
-        icons = 0xffa0a0a0,
-        border = 0xff414141,
-        buttons = 0xff959697,
+        text = 0xffe0def4,              -- Text
+        bg = 0x991f1d2e,                -- Surface
+        bg_alt = 0xff403d52,            -- Highlight Med
+        icons = 0xff9ccfd8,             -- Foam
+        border = 0xff524f67,            -- Highlight High
+        buttons = 0xffc4a7e7,           -- Iris
         blur_radius = 60,
         with_alpha = function(color, alpha)
             if alpha > 1.0 or alpha < 0.0 then return color end
@@ -61,3 +61,4 @@ return {
         end
     }
 }
+

@@ -56,3 +56,5 @@ if status --is-interactive
     source (pyenv init -     | psub)
     source (pyenv virtualenv-init - | psub)
 end
+
+fish_config theme choose "Rosé Pine"

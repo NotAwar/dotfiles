@@ -1,7 +1,7 @@
 # Dotfiles I've used
 
 There are old and new configs here. 
-Not actively using /aerospace or /yabai, current setup is using amethyst 
+Not actively using /skhd, /aerospace or /yabai, current setup is using amethyst 
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/fc065625-81a0-4d38-a1d0-7e8001d4d984" width="49%" alt="Screenshot 1" />

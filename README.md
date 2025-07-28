@@ -1,4 +1,4 @@
-# Dotfiles I've used
+# Dotfiles 
 
 There are old and new configs here. 
 Not actively using /skhd, /aerospace or /yabai, current setup is using amethyst 

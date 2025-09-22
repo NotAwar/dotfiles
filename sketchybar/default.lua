@@ -75,6 +75,5 @@ sbar.default({
 	scroll_texts  = true,
 	blur_radius   = 60,
 
-
 }
 )

@@ -15,6 +15,7 @@ sbar.bar({
     corner_radius = 6,
     shadow = true,
     blur_radius = 60,
+    topmost = on, 
 })
 
 -- Animate with a smooth rubber band effect

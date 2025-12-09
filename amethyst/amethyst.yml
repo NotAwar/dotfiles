@@ -15,10 +15,10 @@
 
 # layouts - Ordered list of layouts to use by layout key (default tall, wide, fullscreen, and column).
 layouts:
-  - tall
+  # - tall
   - fullscreen
   # - tall-right
-  - wide
+  # - wide
   - two-pane
   # - middle-wide
   # - 3column-left
@@ -26,7 +26,7 @@ layouts:
   # - 3column-right
   # - 4column-left
   # - 4column-right
-  - column
+  # - column
   # - row
   # - floating
   # - widescreen-tall
@@ -171,38 +171,35 @@ swap-main:
 
 # Move focus to the n-th screen in the list; e.g., focus-screen-3 will move mouse focus to the 3rd screen. Note that the main window in the given screen will be focused.
 #focus-screen-n:
-# focus-screen-<screen-number>:
-#   mod: mod1
-#   key: y
-# Move the currently focused window to the n-th screen; e.g., throw-screen-3 will move the window to the 3rd screen.
-# throw-screen-n:
-# throw-screen-<screen-number>:
-#   mod: mod1
-#   key: u
-# Move the currently focused window to the n-th space; e.g., throw-space-3 will move the window to the 3rd space.
-# throw-space-<screen-number>:
-#   mod: mod1
-#   key: i
+focus-screen-1:
+  mod: mod1
+  key: 1
+focus-screen-2:
+  mod: mod1
+  key: 2
+focus-screen-3:
+  mod: mod1
+  key: 3
 
 # Select tall layout
-select-tall-layout:
-  mod: mod1
-  key: a
+#select-tall-layout:
+#  mod: mod1
+#  key: a
 
 # Select wide layout
-select-wide-layout:
-  mod: mod1
-  key: s
+#select-wide-layout:
+#  mod: mod1
+#  key: s
 
 # Select fullscreen layout
 select-fullscreen-layout:
   mod: mod1
-  key: d
+  key: f
 
 # Select column layout
-select-column-layout:
-  mod: mod1
-  key: f
+#select-column-layout:
+#  mod: mod1
+#  key: f
 
 # Move the currently focused window to the space to the left.
 throw-space-left:
@@ -245,13 +242,13 @@ relaunch-amethyst:
   key: z
 
 # disable screen padding on builtin display
-disable-padding-on-builtin-display: false
+disable-padding-on-builtin-display: true
 
 # Boolean flag for whether or not to add margins between windows (default false).
 window-margins: true
 
 # Boolean flag for whether or not to set window margins if there is only one window on the screen, assuming window margins are enabled (default false).
-smart-window-margins: true
+smart-window-margins: false
 
 # # Add 10px margin between windows
 # window-margins: true
@@ -321,7 +318,7 @@ screen-padding-left: 5
 screen-padding-right: 5
 
 # Padding to apply between windows and the top edge of the screen (in px, default 0).
-screen-padding-top: 25
+screen-padding-top: 40
 
 # Padding to apply between windows and the bottom edge of the screen (in px, default 0).
 screen-padding-bottom: 10

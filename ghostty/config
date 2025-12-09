@@ -38,7 +38,8 @@ window-subtitle = false
 auto-update = check
 auto-update-channel = stable
 quit-after-last-window-closed = true
-shell-integration-features = true
+shell-integration = fish
+shell-integration-features = ssh-terminfo,ssh-env
 title = "  "
 # macos
 macos-option-as-alt = false
@@ -60,6 +61,7 @@ clipboard-paste-protection = true
 clipboard-paste-bracketed-safe = true
 
 # Keybind changes from default
+keybind = cmd+z=undo
 keybind = cmd+shift+t=new_window
 keybind = cmd+t=new_tab
 keybind = cmd+shift+plus=increase_font_size:1

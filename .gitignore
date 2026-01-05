@@ -3,4 +3,6 @@
 /configstore/*
 /gh/*
 /rizin/*
-
+/nvim/undodir/*
+/nvim/lazy-lock.json
+/nvim/lua/config/package-lock.json

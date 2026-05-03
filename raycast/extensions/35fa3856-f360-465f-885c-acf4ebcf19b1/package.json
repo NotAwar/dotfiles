@@ -357,7 +357,7 @@
     "proxy-agent": "^6.5.0",
     "run-applescript": "^7.0.0",
     "say": "^0.16.0",
-    "uuid": "^9.0.0",
+    "uuid": "^14.0.0",
     "youtube-transcript": "^1.2.1"
   },
   "devDependencies": {
